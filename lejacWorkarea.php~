@@ -1,0 +1,11 @@
+<?php
+
+$tmpSelect = GetLevelValues($selectID);
+	
+$WAnameInclude = $productDir."legacwa".$FILEname[$tmpSelect[0]] [$tmpSelect[1]] [$tmpSelect[2]] [$tmpSelect[3]].".php";
+
+//DEBUG echo " include = '$WAnameInclude'";
+
+?>
+
+<?php include ("$WAnameInclude"); ?>

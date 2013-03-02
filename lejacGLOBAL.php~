@@ -1,0 +1,270 @@
+<?php
+
+//----------------------------------------------------------------------------------------------------------
+// Define constants
+//----------------------------------------------------------------------------------------------------------
+$EmptyTag = "No Tags"; 
+$JustTag = "Tagged"; 
+$AllTag = "All"; 
+
+$ToolTips = "on"; 
+//$ToolTips = "off";
+
+//----------------------------------------------------------------------------------------------------------
+// Define host
+//----------------------------------------------------------------------------------------------------------
+include ('lejacsetHost.php');
+
+//----------------------------------------------------------------------------------------------------------
+// Define directories
+//----------------------------------------------------------------------------------------------------------
+$lejacqualDir = "/var/www/html/";
+$lejacrootDir = "lejac/";
+$lejachomeDir = "Home/";
+$lejacrestorationworkDir = "RestorationWork/";
+
+$lejacnavdir[0] = $lejacrootDir;
+$lejacnavdir[1] = $lejachomeDir;
+$lejacnavdir[2] = $lejacrestorationworkDir;
+
+//----------------------------------------------------------------------------------------------------------
+// all content
+//----------------------------------------------------------------------------------------------------------
+$allcontentWidth = 951;
+
+//----------------------------------------------------------------------------------------------------------
+// Banner variables
+//----------------------------------------------------------------------------------------------------------
+$BannerHeight = 70;
+$BannerWidth = 950;
+
+$BannerTextHeight = $BannerHeight - 30; 
+$BannerTextLeft = 550; 
+$BannerTextWidth = $BannerWidth - $BannerTextLeft; 
+$BannerBackgroundColor = "white";
+// $BannerBackgroundColor = "#89b2b4";
+
+//----------------------------------------------------------------------------------------------------------
+// Main Nav variables
+//----------------------------------------------------------------------------------------------------------
+$MainNavTop = $BannerHeight + 2;
+$MainNavHeight = 30;
+$MainNavWidth = $BannerWidth;
+$MainNavBackgroundColor = "white";
+
+//
+// Define upper tab variables
+//
+$MainNavTabUpperColor = "#a23636";
+$MainNavTabUpperTextColor = "white";
+$MainNavTabUpperTextHoverColor = "#b0a3a5";
+$MainNavTabUpperCellSelectColor = "#c6d0d0";
+$MainNavTabUpperCellSelectTextColor = "black";
+
+$MainNavTabUpperHeight = 20;
+$MainNavTabUpperWidth = 150;
+$MainNavTabUpperGap = 1;
+
+//
+// Define lower tab variables
+//
+$ManinNavLowerHeight = 10;
+$ManinNavLowerTop = $MainNavTabUpperHeight;
+
+$ManinNavLowerColor = $MainNavTabUpperCellSelectColor;
+
+//----------------------------------------------------------------------------------------------------------
+// Define Menu Titles (All) and Actions
+//----------------------------------------------------------------------------------------------------------
+
+//
+// Set Nav Menu Titles
+//
+$NavTitle [1][0][0][0] = 'LEJAC';
+$NavTitle [1][1][0][0] = 'Contact Us';
+
+$NavTitle [2][0][0][0] = 'Restoration Work';
+$NavTitle [2][1][0][0] = 'Dining Room Table';
+$NavTitle [2][2][0][0] = 'Butlers Table';
+$NavTitle [2][3][0][0] = 'Walnut Bureau';
+$NavTitle [2][4][0][0] = 'Cherry Bureau';
+
+//
+// Set Nav Menu alt messages
+//
+$NavToolTipMsg [1][0][0][0] = 'LEJAC main link to home page,';
+$NavToolTipMsg [1][1][0][0] = 'Information on how to Contact Us';
+
+$NavToolTipMsg [2][0][0][0] = 'Examples of Restoration Work';
+$NavToolTipMsg [2][1][0][0] = 'Dining Room Table';
+$NavToolTipMsg [2][2][0][0] = 'Butlers Table';
+$NavToolTipMsg [2][3][0][0] = 'Walnut Bureau';
+$NavToolTipMsg [2][4][0][0] = 'Cherry Bureau';
+
+//
+// Set Nav Menu alt images
+//
+$NavToolTipImageNames [1][0][0][0] = 'None';
+$NavToolTipImageNames [1][1][0][0] = 'None';
+
+$NavToolTipImageNames [2][0][0][0] = 'None';
+$NavToolTipImageNames [2][1][0][0] = 'dinetbl3.bmp';
+$NavToolTipImageNames [2][2][0][0] = 'btable2.bmp';
+$NavToolTipImageNames [2][3][0][0] = 'bureau.bmp';
+$NavToolTipImageNames [2][4][0][0] = 'cherry3.bmp';
+
+
+//
+// Set File Name for files to sellect
+//
+$FILEname [1][0][0][0] = 'Home';
+$FILEname [1][1][0][0] = 'ContactUs';
+
+$FILEname [2][0][0][0] = 'RestorationWork';
+$FILEname [2][1][0][0] = 'DiningRoomTable';
+$FILEname [2][2][0][0] = 'ButlersTable';
+$FILEname [2][3][0][0] = 'WalnutBureau';
+$FILEname [2][4][0][0] = 'CherryBureau';
+
+//----------------------------------------------------------------------------------------------------------
+// LefT Nav variables
+//----------------------------------------------------------------------------------------------------------
+$LeftNavTop = $MainNavTop + $MainNavHeight;
+$LeftNavHeight = 650;
+$LeftNavWidth = 150;
+$LeftNavBackgroundColor = $MainNavTabUpperCellSelectColor;
+
+//
+// Left Nav Menu variables
+//
+
+$LeftNavMenuBorderColor = $MainNavTabUpperCellSelectColor;
+$LeftNavMenuBorderWidth = 0;
+$LeftNavMenuBorderTopWidth = 0;
+$LeftNavMenuBorderBottomWidth = 1;
+$LeftNavMenuPadding = 0;
+$LeftNavMenuMargin = 0;
+
+$LeftNavMenuHdrCellTextColor = $MainNavTabUpperCellSelectColor;
+$LeftNavMenuHdrCellTextFonts= "Verdana, Arial, Helvetica, sans-serif";
+$LeftNavMenuHdrCellTextFontSize= "13";
+$LeftNavMenuHdrCellTextWeight= "700";
+$LeftNavMenuHdrCellPaddingTopBottom = 4;
+$LeftNavMenuHdrCellPaddingLeftRight = 6;
+$LeftNavMenuHdrCellBackgroundColor = "#1b5f5d";
+$LeftNavMenuBorderWidth = 0;
+
+$LeftNavMenuCellTextColor = "black";
+$LeftNavMenuCellTextFonts= "Verdana, Arial, Helvetica, sans-serif";
+$LeftNavMenuCellTextFontSize= "12";
+$LeftNavMenuCellTextWeight= "500";
+$LeftNavMenuCellLineHeight = 15; 
+$LeftNavMenuCellBackgroundColor = "#468e8b";
+
+$LeftNavMenuCellHoverTextColor = "blue";
+$LeftNavMenuCellHoverBackgroundColor = "#70b1af";
+
+$LeftNavMenuCellSelectBackgroundColor = "white";
+
+//----------------------------------------------------------------------------------------------------------
+// LefT Nav Supported Causes logo variables
+//----------------------------------------------------------------------------------------------------------
+$supportedCausesTop = 400;
+$supportedCausesHeight = 200;
+$supportedCausesWidth = 150;
+$supportedCausesBackgroundColor = $MainNavTabUpperCellSelectColor;
+
+//----------------------------------------------------------------------------------------------------------
+//  Workarea variables
+//----------------------------------------------------------------------------------------------------------
+
+$WATop = $MainNavTop + $MainNavHeight;
+$WAHeight = $LeftNavHeight;
+$WALeft= $LeftNavWidth;
+$WAWidth = $BannerWidth - $LeftNavWidth;
+$WABackgroundColor = "white";
+
+//
+// WA Breadcrumb variables
+//
+$WAbreadcrumbTop = 2; 
+$WAbreadcrumbHeight = 15;
+$WAbreadcrumbLeft= 5;
+$WAbreadcrumbWidth = $WAWidth - ($WAbreadcrumbLeft + 2);
+$WAbreadcrumbBackgroundColor = "white";
+
+$WAbreadcrumbTextColor= "#333";
+$WAbreadcrumbTextFonts= "verdana,sans-serif";
+$WAbreadcrumbTextFontSize= "11";
+$WAbreadcrumbTextWeight= "500";
+$WAbreadcrumbTextColoHover= "red";
+$WAbreadcrumbTextLineHeight = 11;
+
+//
+// WA Title Border variables
+//
+$WAtitleborderTop = $WAbreadcrumbTop + $WAbreadcrumbHeight; 
+$WAtitleborderHeight = 30;
+$WAtitleborderLeft= 5;
+$WAtitleborderWidth = $WAWidth - ($WAtitleborderLeft + 2);
+$WAtitleborderBackgroundColor = "white";
+
+$WAtitleborderBottomColor = "#d1b60c";
+$WAtitleborderBottomSize = "2";
+
+$WAtitleborderTextColor= "#a23636";
+$WAtitleborderTextFonts= "Arial,Helvetica";
+$WAtitleborderTextFontSize= "15";
+$WAtitleborderTextWeight= "700";
+$WAtitleborderTextLineStyle = "italic";
+$WAtitleborderTextLineHeight = 15;
+$WAtitleborderTextAlign = "right";
+
+//
+// WA home variables
+//
+$WAhomeTop = $WAtitleborderTop + $WAtitleborderHeight; 
+$WAhomeHeight = $WAHeight;
+$WAhomeLeft= 0;
+$WAhomeWidth = $WAWidth - 1;
+$WAhomeBackgroundColor = "white";
+
+
+//
+// WA main variables
+//
+$WAmainTop = $WAtitleborderTop + $WAtitleborderHeight; 
+$WAmainHeight = 200;
+$WAmainLeft= 0;
+$WAmainWidth = $WAWidth - 1;
+$WAmainBackgroundColor = "white";
+
+//
+// WA select variables
+//
+$WAselectTop = $WAmainTop + $WAmainHeight; 
+$WAselectHeight = $WAHeight - $WAselectTop;
+$WAselectLeft= 0;
+$WAselectWidth = $WAWidth - 1;
+$WAselectBackgroundColor = "white";
+
+//
+// Used to create Names of files to include for top level work area
+//
+$WAgo = "lejacwaSTDtrans.php";
+$WAstay = "lejacwaSTDfinal.php";
+
+//----------------------------------------------------------------------------------------------------------
+// Footer variables
+//----------------------------------------------------------------------------------------------------------
+$FooterTop = $LeftNavTop + $LeftNavHeight + 2;
+$FooterLeft = 0;
+$FooterWidth = $BannerWidth;
+
+//----------------------------------------------------------------------------------------------------------
+// Miscelaneous global variables
+//----------------------------------------------------------------------------------------------------------
+$Spacer = "&nbsp;&nbsp;";
+$module = 'index.html';
+
+?>
