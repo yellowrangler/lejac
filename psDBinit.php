@@ -47,7 +47,7 @@ if (!$conn)
 	$sqlerr = mysql_error();
 	$errmsg = "$sqlerr - Error doing mysql_query for connect to PhotoDB  (1110) - '$filename'";
 	$shortmsg = $errmsg;
-	$location = "Location: index.html?selectID=$selectID&msgTxt=$DisplayMsg&photofilename=$filename&filter=$filter";
+	$location = "Location: index.php?selectID=$selectID&msgTxt=$DisplayMsg&photofilename=$filename&filter=$filter";
 	$severity = 1;
 	LogErr($shortmsg, $errmsg, $location, $module, $severity);		
 }
@@ -58,7 +58,7 @@ if (!mysql_select_db($DataBase, $conn))
 	$sqlerr = mysql_error();
 	$errmsg = "$sqlerr - Error doing mysql_query for connect to PhotoDB  (1100) - '$filename'";
 	$shortmsg = $errmsg;
-	$location = "Location: index.html?selectID=$selectID&msgTxt=$DisplayMsg&photofilename=$filename&filter=$filter";
+	$location = "Location: index.php?selectID=$selectID&msgTxt=$DisplayMsg&photofilename=$filename&filter=$filter";
 	$severity = 1;
 	LogErr($shortmsg, $errmsg, $location, $module, $severity);		
 }	

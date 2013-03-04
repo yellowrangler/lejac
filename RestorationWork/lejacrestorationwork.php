@@ -28,7 +28,7 @@ for ($i = getNavArrayInstance($key); $i < count($NavArray); $i++)
           <td>
             <table>
                 <tr>
-                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.html?selectID=$dispKey\"
+                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.php?selectID=$dispKey\"
                         onmouseover=\"Tip('<center> <img src=".$productDir."images/$dispImg width=500> <br>')\" 
                         onmouseout=\"UnTip()\">
                         <img  height=100 width=100 align=center border=0 src=".$productDir."images/$dispImg></a>

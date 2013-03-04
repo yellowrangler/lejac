@@ -56,7 +56,7 @@ function GetBreadCrumbs($selectID)
 	{
 		$DisplayBreadCRumbs .= "
 			<td  class=\"breadCrumb\"> 
-				<a href=\"index.html?selectID=".$BCtitleValue[$i]."\" class=\"breadCrumb\">
+				<a href=\"index.php?selectID=".$BCtitleValue[$i]."\" class=\"breadCrumb\">
 					".$BCtitle[$i]."
 				</a>
 		";

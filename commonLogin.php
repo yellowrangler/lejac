@@ -18,7 +18,7 @@ $PrivateUser = 'P';
 $DB = "WhippoorwillbridgeDB";
 
 $selectID = $_POST[selectID];
-$NextPage = "Location: /WWB/index.html?selectID=$selectID";
+$NextPage = "Location: /WWB/index.php?selectID=$selectID";
 
 $WhichHost = $_SESSION[WhichHost];    
 
@@ -28,7 +28,7 @@ $WhichHost = $_SESSION[WhichHost];
 if ( (!isset($_POST[userid])) || (!isset($_POST[password])) )
 {
 	$errmsg = "Empty field $_POST[userid] $_POST[password]";
-	$location = "Location: /WWB/index.html?msg=$errmsg&selectID=$selectID";
+	$location = "Location: /WWB/index.php?msg=$errmsg&selectID=$selectID";
 	LogErr($shortmsg, $errmsg, $location, $module, $severity);
 }
 
