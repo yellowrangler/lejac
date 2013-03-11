@@ -25,7 +25,7 @@ $DisplayMsg2b = "<p><br>blah blah blah blah blah blah blah blah blah blah blah b
 <table width="95%" class="regTextsmall">
 	<tr>
 		<td valign=center align=center width="60%"><img width=415 align=top border=0 src="<?php print $productDir; ?>images/legacproductA.jpg"></td>	
-		<td align=left valign=top width="40%"><? print $DisplayMsg; ?></td>  
+		<td align=left valign=top width="40%"><?php print $DisplayMsg; ?></td>  
 	</tr>
 </table>
 <br><br>

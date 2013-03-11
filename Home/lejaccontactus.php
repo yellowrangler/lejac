@@ -39,7 +39,7 @@
 					<tr>
 						<td align="left" valign="top"><img  align="center" border="0" src="<?php print $productDir; ?>images/phone.gif"></td>
 						<td align="left" width=5>&nbsp;</td>
-						<td align="left" valign="top" class="regTextsmall">Call me at 603-823-5019 or 800-600-5500</td>
+						<td align="left" valign="top" class="regTextsmall">Call me at 603-823-5050 or 800-600-5500. Fax: 603-823-5050</td>
 					</tr>
 				</table>
 			</td>

@@ -12,9 +12,9 @@ $DisplayLeftNavBody = "
     <table width = \"100%\">
         <tr>
             <td align=center> 
-                <a href=\"#\" onClick=\"(PopUP('http://www.massaudubon.org/index.php', 'massaudubon', 840, 840, 0))\">
-                    <img  border=0 alt=\"Please support and visit the Massachusetts Audubon Society\" 
-                    src=\"images/massaudubon_logo.gif\" 
+                <a href=\"#\" onClick=\"(PopUP('http://www.franconianotch.org/', 'fcc', 840, 840, 0))\">
+                    <img  border=0 alt=\"Member of Franconia Chamber of Commerce\" 
+                    src=\"images/Franconia Chamber logo.gif\" 
                     align=center width=\"".$imageWidth."\">
                 </a>	
             </td>
@@ -26,16 +26,25 @@ $DisplayLeftNavBody = "
         </tr>
         <tr>
             <td align=center> 
-                <a href=\"#\" onClick=\"(PopUP('http://www.thetrustees.org/', 'ttor', 840, 840, 0))\">
-                    <img  border=0 alt=\"Please support and visit the The Trustees of the Reservation\" 
-                    src=\"images/ttor.jpg\" 
+                <a href=\"#\" onClick=\"(PopUP('http://www.littletonareachamber.com/', 'lcc', 840, 840, 0))\">
+                    <img  border=0 alt=\"Member of Littleton Chamber of Commerce\" 
+                    src=\"images/littletonchamberlogo.png\" 
                     align=center width=\"".$imageWidth."\">
                 </a>
             </td>
         </tr>
-        <tr>
+		<tr>
             <td>
                 &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align=center> 
+                <a href=\"#\" onClick=\"(PopUP('http://www.aconservationtrust.org/', 'acc', 840, 840, 0))\">
+                    <img  border=0 alt=\"Member of Ammonoosuc Conservation Trust\" 
+                    src=\"images/act_logo2.jpg\" 
+                    align=center width=\"".$imageWidth."\">
+                </a>
             </td>
         </tr>
     </table>

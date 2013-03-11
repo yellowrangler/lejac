@@ -154,8 +154,57 @@ $NavArray [6] ['filename'] = 'CherryBureau';
 $NavArray [6] ['floatimg'] = 'cherry3.bmp';
 $NavArray [6] ['parent'] = 'RestorationWork';
 $NavArray [6] ['child'] = 'None';
-$NavArray [6] ['NextPeer'] = 'None';
+$NavArray [6] ['NextPeer'] = 'MachineCane';
 $NavArray [6] ['PrevPeer'] = 'WalnutBureau';
+
+//-- Added 3/11/2013
+$NavArray [7] ['type'] = 'S';
+$NavArray [7] ['title'] = 'Machine Woven Cane';
+$NavArray [7] ['key'] = 'MachineCane';
+$NavArray [7] ['proddir'] = 'RestorationWork/';
+$NavArray [7] ['tooltip'] = 'Machine Woven Cane';
+$NavArray [7] ['filename'] = 'MachineCane';
+$NavArray [7] ['floatimg'] = 'machinecane.png';
+$NavArray [7] ['parent'] = 'RestorationWork';
+$NavArray [7] ['child'] = 'None';
+$NavArray [7] ['NextPeer'] = 'HandCane';
+$NavArray [7] ['PrevPeer'] = 'CherryBureau';
+
+$NavArray [8] ['type'] = 'S';
+$NavArray [8] ['title'] = 'Hand Woven Cane';
+$NavArray [8] ['key'] = 'HandCane';
+$NavArray [8] ['proddir'] = 'RestorationWork/';
+$NavArray [8] ['tooltip'] = 'Hand Woven Cane';
+$NavArray [8] ['filename'] = 'HandCane';
+$NavArray [8] ['floatimg'] = 'handcane2.png';
+$NavArray [8] ['parent'] = 'RestorationWork';
+$NavArray [8] ['child'] = 'None';
+$NavArray [8] ['NextPeer'] = 'HandRush';
+$NavArray [8] ['PrevPeer'] = 'MachineCane';
+
+$NavArray [9] ['type'] = 'S';
+$NavArray [9] ['title'] = 'Hand Woven Rush';
+$NavArray [9] ['key'] = 'HandRush';
+$NavArray [9] ['proddir'] = 'RestorationWork/';
+$NavArray [9] ['tooltip'] = 'Hand Woven Rush';
+$NavArray [9] ['filename'] = 'HandRush';
+$NavArray [9] ['floatimg'] = 'handrush1.png';
+$NavArray [9] ['parent'] = 'RestorationWork';
+$NavArray [9] ['child'] = 'None';
+$NavArray [9] ['NextPeer'] = 'HerringCord';
+$NavArray [9] ['PrevPeer'] = 'HandCane';
+
+$NavArray [10] ['type'] = 'S';
+$NavArray [10] ['title'] = 'Hearing Bone & Cord';
+$NavArray [10] ['key'] = 'HerringCord';
+$NavArray [10] ['proddir'] = 'RestorationWork/';
+$NavArray [10] ['tooltip'] = 'Paper Rush, Hearing Bone & Cord Seat Weaving';
+$NavArray [10] ['filename'] = 'HerringCord';
+$NavArray [10] ['floatimg'] = 'herringcord2.png';
+$NavArray [10] ['parent'] = 'RestorationWork';
+$NavArray [10] ['child'] = 'None';
+$NavArray [10] ['NextPeer'] = 'None';
+$NavArray [10] ['PrevPeer'] = 'HandRush';
 
 //----------------------------------------------------------------------------------------------------------
 // LefT Nav variables
@@ -200,7 +249,7 @@ $LeftNavMenuCellSelectBackgroundColor = "white";
 //----------------------------------------------------------------------------------------------------------
 // LefT Nav Supported Causes logo variables
 //----------------------------------------------------------------------------------------------------------
-$supportedCausesTop = 400;
+$supportedCausesTop = 320;
 $supportedCausesHeight = 200;
 $supportedCausesWidth = 150;
 $supportedCausesBackgroundColor = $MainNavTabUpperCellSelectColor;

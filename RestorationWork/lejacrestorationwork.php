@@ -15,8 +15,10 @@ questions.</p>";
 $DisplaySelections = "<table width=\"90%\" class=\"regTextsmall\">
                             <tr>";
 
+$rowNbr = 4;
 $instance = getNavArrayInstance($selectID);
 $key = $NavArray[$instance] ['child'];
+$k = 0;
 for ($i = getNavArrayInstance($key); $i < count($NavArray); $i++)
 {
     if ($NavArray[$i] ['floatimg'] != 'None')
@@ -24,11 +26,16 @@ for ($i = getNavArrayInstance($key); $i < count($NavArray); $i++)
         $dispKey = $NavArray[$i] ['key'];
         $dispImg = $NavArray[$i] ['floatimg'];
         $dispTitle = $NavArray[$i] ['title'];
+		if (($k % $rowNbr) == 0)
+		{
+			$DisplaySelections .= "</tr><tr> ";
+		}
+		
         $DisplaySelections .= "
           <td>
             <table>
                 <tr>
-                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.php?selectID=$dispKey\"
+                    <td class=\"verysmallText\" align=center valign=top ><a href=\"index.php?selectID=$dispKey\"
                         onmouseover=\"Tip('<center> <img src=".$productDir."images/$dispImg width=500> <br>')\" 
                         onmouseout=\"UnTip()\">
                         <img  height=100 width=100 align=center border=0 src=".$productDir."images/$dispImg></a>
@@ -43,7 +50,7 @@ for ($i = getNavArrayInstance($key); $i < count($NavArray); $i++)
                 ";
        
        $key = $NavArray[$i] ['NextPeer'];
-       
+       $k++;
        if ($key == 'None')
            break;
     }

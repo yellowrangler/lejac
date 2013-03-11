@@ -50,7 +50,7 @@ $DisplayMsg2 = "<p> LEJAC Enterprises  offers a full line of services including:
 	<tr>
 		<td align="left"  valign="top" class="regText"><?php print $DisplayMsg2; ?></td>
 		<td align="left">&nbsp;</td>
-		<td align="center"  valign="top"><img height=255 align="center" border="0" src="<?php print $productDir; ?>images/frontchair.png"></td>
+		<td align="center"  valign="top"><img height=173 width=278 align="center" border="0" src="<?php print $productDir; ?>images/tools2.jpg"></td>
 	</tr>
 </table>
 </div>

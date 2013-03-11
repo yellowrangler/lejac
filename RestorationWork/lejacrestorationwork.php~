@@ -6,11 +6,57 @@
 $DisplayMsg1 = "<p>I have been working for over ten years restoring all types of damage made to various forms of furniture. From fire and water 
 damage to fine furniture that was painted over. You will be supprised at what we can bring out regardless of the furnitures condition.</p>";
 
-$DisplayMsg2 = "<p>As I find especially challenging pieces I try to put them up on my web site for you view. I find the best way to do this 
-is to display before and after pictures interspersed with a short narrative of what happened.</p>";
+$DisplayMsg2 = "<p>As I find especially challenging pieces I try to put them up on my web site for you to view. I find the best way to do this 
+is to display before and after pictures interspersed with a short narrative of what I did.</p>";
 
 $DisplayMsg3 = "<p>Each pictue can be clicked to render a larger more detailed view. Please feel free to browse my work and let me know if you have any
 questions.</p>";
+
+$DisplaySelections = "<table width=\"90%\" class=\"regTextsmall\">
+                            <tr>";
+
+$instance = getNavArrayInstance($selectID);
+$key = $NavArray[$instance] ['child'];
+for ($i = getNavArrayInstance($key); $i < count($NavArray); $i++)
+{
+    if ($NavArray[$i] ['floatimg'] != 'None')
+    {
+        $dispKey = $NavArray[$i] ['key'];
+        $dispImg = $NavArray[$i] ['floatimg'];
+        $dispTitle = $NavArray[$i] ['title'];
+        $DisplaySelections .= "
+          <td>
+            <table>
+                <tr>
+                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.php?selectID=$dispKey\"
+                        onmouseover=\"Tip('<center> <img src=".$productDir."images/$dispImg width=500> <br>')\" 
+                        onmouseout=\"UnTip()\">
+                        <img  height=100 width=100 align=center border=0 src=".$productDir."images/$dispImg></a>
+                        <br>
+                        <center>
+                        $dispTitle
+                        </center>
+                    </td>
+               </tr>
+            </table>
+          </td>  
+                ";
+       
+       $key = $NavArray[$i] ['NextPeer'];
+       
+       if ($key == 'None')
+           break;
+    }
+    else
+    {
+        break;
+    }
+}
+  
+$DisplaySelections .= "
+                            </tr>	
+                        </table>
+                     ";
 
 ?>
 
@@ -40,33 +86,7 @@ questions.</p>";
 <br>
 <br>
 <center>
-<table width="90%" class="regTextsmall">
-	<tr>
-        <td align="left" valign="top"><a href="index.html?selectID=<?php print returnSelectID('DiningRoomTable'); ?>"
-            onmouseover="Tip('<center> <img src=\'<?php print $productDir; ?>images/dinetbl4.bmp\' width=\'500\'> <br>')" 
-            onmouseout="UnTip()">
-            <img  height=100 width=100 align="left" border="0" src="<?php print $productDir; ?>images/dinetbl4.bmp"></a>
-        </td>
-		<td align="left" width=5>&nbsp;</td>		
-        <td align="right" valign="top"><a href="index.html?selectID=<?php print returnSelectID('ButlersTable'); ?>"
-            onmouseover="Tip('<center> <img src=\'<?php print $productDir; ?>images/btable2.bmp\' width=\'500\'> <br>')" 
-            onmouseout="UnTip()">
-            <img  height=100 width=100 align="left" border="0" src="<?php print $productDir; ?>images/btable2.bmp"></a>
-        </td>
-		<td align="left" width=5>&nbsp;</td>
-	    <td align="left" valign="top"><a href="index.html?selectID=<?php print returnSelectID('WalnutBureau'); ?>" 
-            onmouseover="Tip('<center> <img src=\'<?php print $productDir; ?>images/bureau.bmp\' width=\'500\'> <br>')" 
-            onmouseout="UnTip()">
-            <img  height=100 width=100 align="left" border="0" src="<?php print $productDir; ?>images/bureau.bmp"></a>	
-		</td>	
-		<td align="left" width=5>&nbsp;</td>
-        <td align="right" valign="top"><a href="index.html?selectID=<?php print returnSelectID('CherryBureau'); ?>" 
-            onmouseover="Tip('<center> <img src=\'<?php print $productDir; ?>images/cherry3.bmp\' width=\'500\'> <br>')" 
-            onmouseout="UnTip()">
-            <img  height=100 width=100 align="left" border="0" src="<?php print $productDir; ?>images/cherry3.bmp"></a>
-        </td>
-	</tr>	
-</table>
+<?php print $DisplaySelections; ?>
 </center>
 
 </div>
