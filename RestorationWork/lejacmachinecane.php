@@ -5,9 +5,9 @@
 //----------------------------------------------------------------------------------------------------------
 
 $DisplayMsg1 = "<p>This is an example of a chair seat that is made of machine woven cane and installed with a wooden spline. This tends to be the least expensive caning to replace.
-the caning is machine woven into sheets and comes with various sized holes and diameters. We measure out the size we need and cut out a piece to fit from the sheet</p>";
+The caning is machine woven into sheets and comes with various sized holes and diameters. We measure out the size we need and cut out a piece to fit from the sheet</p>";
                         
-$DisplayMsg2 = "<p>Around the edge of the seat's open area is a grove. The caning sheet is placed over the grove and centered. The wooden splines are then glued and gently hammered into the grove taking 
+$DisplayMsg2 = "<p>Around the edge of the seat's open area is a grove. The caning sheet is placed over the grove and centered. The wooden spline is then glued and gently hammered into the grove taking 
 the caning sheet with it.</p>";
                         
 $DisplayMsg3 = "<p>Once the spline is in place, any excess cane sheeting is trimmed leaving a clean edge between the outer edge of the spine and the seat.</p>";

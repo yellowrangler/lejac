@@ -7,11 +7,11 @@
 $DisplayMsg1 = "<p>Corded and Paper Rush are products made to look like true rush, but are actually pre-twist materials sold on spools similar to rope. The top two images to the left 
 represent a bench we did in a paper or kraft product.</p>";
                         
-$DisplayMsg2 = "<p>Popular cords include Danish cords and sear grass cords. In addition you can now find cat tail cords. These pre-twisted cord products can be woven directly into
+$DisplayMsg2 = "<p>Popular cords include Danish cords and sea grass cords. In addition you can now find cat tail cords. These pre-twisted cord products can be woven directly into
 the chair without the wetting and standing period required by authentic rushes. However, unlike true cat tails, characteristics of the cord make it difficult to 
 manage design in complicated seats or chair backs.</p>";
                         
-$DisplayMsg3 = "<p>The final sesting is called herring bone named for its beautiful weave design. Here the weaver is utilizing a type of caning, but instead of weaving through holes, 
+$DisplayMsg3 = "<p>The final seating is called herring bone named for its beautiful weave design. Here the weaver is utilizing a type of caning, but instead of weaving through holes, 
 they weave over a frame (as is done with the rush and cord work). The image to the left shows the herring bone weave.</p>";
                         
 ?>

@@ -5,12 +5,12 @@
 //----------------------------------------------------------------------------------------------------------
 
 $DisplayMsg1 = "<p>Hand woven rush seating is probably one of the most beautiful seats, but also the most difficult to learn
-and consitently produce good results. Though there are different types of rush, the most common is the reed known as \"cat Tails\".
-The weaver receives them dried and bundled like corn stalks. Before they can be used they must be dampended and set
-asside to let stand.</p>";
+and consistently produce good results. Though there are different types of rush, the most common is the reed known as \"cattails\".
+The weaver receives them dried and bundled like corn stalks. Before they can be used they must be dampened and set
+aside to let stand.</p>";
                         
 $DisplayMsg2 = "<p>The chair seat is just a frame shaped to the design of the furniture maker. The weaver takes these
-damp flattened reeds and twists them around the frame to create the design shown. For the lines traveling through the seats
+damp flattened reeds and twists and wraps them around the frame to create the design shown. For the lines traveling through the seats
 to be even and straight, each reed must be twisted and tensioned properly.</p>";
                         
 $DisplayMsg3 = "<p>You can always tell a genuine rush seat because when you flip it over the reeds are

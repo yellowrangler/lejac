@@ -4,15 +4,15 @@
 // Set Display variables
 //----------------------------------------------------------------------------------------------------------
 
-$DisplayMsg1 = "<p>Hand woven caning is a completely different beast. Here caning comes un reels of different diameters. The diameter is determined by the size
+$DisplayMsg1 = "<p>Hand woven caning is a completely different beast. Here caning comes in reeds of different diameters. The diameter used is determined by the size
 of the holes drilled into the wood and by the distance apart each hole is. Unlike the machine woven cane which has a groove, the hand woven cane
- has holes which the weaver passes the caning reel through.</p>";
+ has holes which the weaver passes the caning reed through.</p>";
                         
 $DisplayMsg2 = "<p>Once the weaver has completed their weave and tied off the last bit, they cover the wholes 
- with a binder. The binder is a wider piece of caning which encirlces the chair covering the holes. The binder is tied down through each hole
+ with a binder. The binder is a wider piece of caning which encircles the chair covering the holes through which the cane is weaved. The binder is tied down through each hole
  giving the seat a clean polished look</p>";
                         
-$DisplayMsg3 = "<p>This is evedent in the first picture above and the picture at the bottom. These pictures are all of the same chair. The picture in the middle 
+$DisplayMsg3 = "<p>This is evident in the first picture above and the picture at the bottom. These pictures are all of the same chair. The picture in the middle 
 shows the damage to the chair, with the last picture the completed repaired seat.</p>";
                         
 ?>
