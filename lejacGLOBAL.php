@@ -249,7 +249,7 @@ $LeftNavMenuCellSelectBackgroundColor = "white";
 //----------------------------------------------------------------------------------------------------------
 // LefT Nav Supported Causes logo variables
 //----------------------------------------------------------------------------------------------------------
-$supportedCausesTop = 320;
+$supportedCausesTop = 280;
 $supportedCausesHeight = 200;
 $supportedCausesWidth = 150;
 $supportedCausesBackgroundColor = $MainNavTabUpperCellSelectColor;
